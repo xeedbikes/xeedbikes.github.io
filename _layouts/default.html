@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"
+  itemscope="" itemtype="http://schema.org/WebPage" lang="no">
+
+<head>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Language" content="no">
+  <meta name="description"
+    content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{{ site.keywords }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ "/assets/styles/app.css" | prepend: site.baseurl }}" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '.html'}}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:image:height" content="180">
+  <meta property="og:image:width" content="180">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description"
+    content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '.html'}}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/favicons/apple-touch-icon.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description"
+    content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image:src" content="{{ site.url }}/assets/img/favicons/apple-touch-icon.png">
+  {% if site.twitter_username %}
+  <meta name="twitter:site" content="{{site.twitter_username}}">
+  <meta name="twitter:creator" content="{{site.twitter_username}}">
+  {% endif %}
+</head>
+
+<body>
+  
+  <div class="page">
+    {% include header.html %}
+    {% include main.html %}
+    {% include footer.html %}
+  </div>
+
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/carousel.js"></script>
+  <script>
+    window.onload = function () {
+      carousel.init('carousel');
+    };
+  </script>
+
+  {% if site.google_analytics %}
+    {% include tracking.html %}
+  {% endif %}
+  
+  {% if jekyll.environment == "production" %}
+    <!-- Install Service Worker -->
+    <amp-install-serviceworker src="/sw.js" data-iframe-src="{{site.url}}/sw.html" layout="nodisplay">
+    </amp-install-serviceworker>
+    {% include sw.html %}
+  {% endif %}
+  
+</body>
+
+</html>

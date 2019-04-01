@@ -1,0 +1,31 @@
+<header class="head">
+  <div class="wrapper">
+    <a href="/" class="logo"><img src="./assets/img/xeed-logo.jpg" alt="Xeed logo"></a>
+    <div id="menu">
+      <button id="btn_menu" class="btn-menu" aria-label="Meny"></button>
+      <ul class="mainnav" role="navigation">
+        {% for item in page.headerlinks %}
+        <li>
+            {% if item.subMenu %}
+              <button>{{item.linkText}}</button>
+              {% for subItem in item.subMenu %}
+                <ul>
+                  <li>
+                    <a href="{{subItem.linkUrl}}">
+                      {% if subItem.linkImageUrl %}
+                        <img width="40px" src="./images/{{subItem.linkImageUrl}}" />
+                      {% endif %}
+                      {{subItem.linkText}}
+                    </a>
+                  </li>
+                </ul>
+              {% endfor %}
+            {% else %}
+            <a href="{{item.linkUrl}}">{{item.linkText}}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</header>

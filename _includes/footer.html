@@ -1,0 +1,13 @@
+<footer>
+  <nav>
+    <ul class="footer-list">
+      {% for item in page.footerlinks %}
+      <li><a href="{{item.linkUrl}}">{{item.linkText}}</a></li>
+      {% endfor %}
+    </ul>
+    <ul class="social-list">
+      <li class="instagram"><a href="" title="Følg oss på Instagram">Instagram</a></li>
+      <li class="facebook"><a href="" title="Følg oss på Facebook">Facebook</a></li>
+    </ul>
+  </nav>
+</footer>
