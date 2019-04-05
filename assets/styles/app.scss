@@ -196,6 +196,10 @@ main > .block:first-child {
             li + li {
               margin-left: 80px;
             }
+
+            img {
+              vertical-align: middle;
+            }
           }
         }
 
@@ -615,6 +619,10 @@ a.block {
           &:checked + label {
             background-color: white;
           }
+        }
+
+        label span {
+          @include visuallyhidden();
         }
       }
     }

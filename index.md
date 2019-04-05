@@ -34,7 +34,7 @@ carousel:
 # fullwidth:
 # -   name: GRV
 #     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-#     imageFileName: 1600x800_xeed_barn_jente_skog.jpg
+#     imageFileName: logotype.jpg
 #     linkText: Se alle cykler
 #     linkUrl: http://xeedbikes.no/
 #     textPosition: left
@@ -108,15 +108,15 @@ headerlinks:
         -   id: 1_1
             linkText: Carbon Terreng
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
         -   id: 1_2
             linkText: Race Terreng
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
         -   id: 1_3
             linkText: Sport & Trening
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
 
 -   id: 2
     linkText: Hybrid
@@ -125,11 +125,11 @@ headerlinks:
         -   id: 1_1
             linkText: Hybrid 1
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
         -   id: 1_2
             linkText: Hybrid 2
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
 
 -   id: 3
     linkText: Jr & Kids
@@ -142,11 +142,11 @@ headerlinks:
         -   id: 4_1
             linkText: Classic & City 1
             linkUrl: https://www.sport1.no/sykkel/sykler/bysykkel/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
         -   id: 4_2
             linkText: Classic & City 2
             linkUrl: https://www.sport1.no/sykkel/sykler/bysykkel/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
 
 -   id: 5
     linkText: El-sykler
@@ -155,11 +155,11 @@ headerlinks:
         -   id: 5_1
             linkText: El-sykkel 1
             linkUrl: https://www.sport1.no/sykkel/sykler/el--sykler/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
         -   id: 5_2
             linkText: El-sykkel 2
             linkUrl: https://www.sport1.no/sykkel/sykler/el--sykler/?b=Xeed
-            linkImageUrl: 1600x800_xeed_barn_jente_skog.jpg
+            linkImageUrl: logotype.jpg
 
 # FOOTER LENKER
 footerlinks:
