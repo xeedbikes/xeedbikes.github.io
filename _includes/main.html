@@ -40,22 +40,59 @@
   </div>
   {% endfor %}
 
-  <!-- FULL BREDDE -->
-  {% for item in page.fullwidth %}
-  <a href="{{item.linkUrl}}" class="block block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
-    <div class="block-content">
-      <h2 class="brand-type">{{item.name}}</h2>
-      <p class="intro">{{item.intro}}</p>
-      <p><span class="btn">{{item.linkText}}</span></p>
-    </div>
-  </a>
-  {% endfor %}
-
   <!-- HALV BREDDE -->
   {% if page.halfwidth[0] != null %}
   <div class="block">
 
     {% for item in page.halfwidth %}
+    <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
+      <div class="block-content">
+        <h2 class="brand-type">{{item.name}}</h2>
+        <p class="intro">{{item.intro}}</p>
+        <p><span class="btn">{{item.linkText}}</span></p>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
+  {% endif %}
+
+  {% if page.halfwidth2[0] != null %}
+  <div class="block">
+
+    {% for item in page.halfwidth2 %}
+    <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
+      <div class="block-content">
+        <h2 class="brand-type">{{item.name}}</h2>
+        <p class="intro">{{item.intro}}</p>
+        <p><span class="btn">{{item.linkText}}</span></p>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
+  {% endif %}
+
+  {% if page.halfwidth3[0] != null %}
+  <div class="block">
+
+    {% for item in page.halfwidth3 %}
+    <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
+      <div class="block-content">
+        <h2 class="brand-type">{{item.name}}</h2>
+        <p class="intro">{{item.intro}}</p>
+        <p><span class="btn">{{item.linkText}}</span></p>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
+  {% endif %}
+
+  {% if page.halfwidth4[0] != null %}
+  <div class="block">
+
+    {% for item in page.halfwidth4 %}
     <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
       <div class="block-content">
         <h2 class="brand-type">{{item.name}}</h2>
