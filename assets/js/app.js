@@ -13,6 +13,9 @@ window.onkeyup = function (e) {
 var btnMenu = document.getElementById('btn_menu');
 var menu = document.getElementById('menu');
 var menuIsOpen = false;
+var menuTogglers = document.querySelectorAll('[data-menu-toggler]');
+var menuAnimDuration = 200;
+
 btnMenu.onclick = function() {
   if (!menuIsOpen) {
     menu.classList.add('open');
@@ -25,21 +28,41 @@ btnMenu.onclick = function() {
   }
 };
 
-// Hovering link block
-// var blocks = document.querySelectorAll('a.block');
-// // for (i = 0; i < blocks; i++) {
-// //   var el = blocks[i];
-// blocks.forEach(el => {
-//   el.onmouseenter = function(e) {
-//     console.log(e.currentTarget);
-//     if (this != e.currentTarget) { return false; }
-//     el.classList.add('hover');
-//   }
-//   el.onmouseleave = function(e) {
-//     if (this != e.currentTarget) { return false; }
-//     el.classList.remove('hover');
-//   }
-// }
+var fnMenuToggle = function fnMenuToggle(i) {
+  var item = menuTogglers[i];
+  item.setAttribute('role', 'button');
+  item.setAttribute('aria-expanded', false);
+  item.onclick = function (e) {
+    e.preventDefault();
+    var target = item.getAttribute('data-menu-toggler');
+    var selector = menu.querySelector(target);
+    var isOpen = selector.classList.contains('shown') ? true : false;
+    if (!isOpen) {
+      var openItem = document.querySelector('[data-menu-toggler].active');
+      if (openItem) {
+        openItem.click();
+      }
+      item.classList.add('active');
+      item.setAttribute('aria-expanded', true);
+      selector.classList.add('shown');
+      // selector.setAttribute('tabindex', '-1');
+    } else {
+      item.classList.remove('active');
+      item.setAttribute('aria-expanded', false);
+      selector.classList.remove('shown');
+      // selector.removeAttribute('tabindex');
+    }
+    if (document.querySelector('[data-menu-toggler].active')) {
+      menu.classList.add('has-open-item');
+    } else {
+      menu.classList.remove('has-open-item');
+    }
+  };
+};
+
+for (var i = 0; i < menuTogglers.length; i++) {
+  fnMenuToggle(i);
+}
 
 // Video Youtube
 function videoPlay(videoElementButton, videoId) {

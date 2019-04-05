@@ -5,25 +5,25 @@
       <button id="btn_menu" class="btn-menu" aria-label="Meny"></button>
       <ul class="mainnav" role="navigation">
         {% for item in page.headerlinks %}
-        <li>
+          <li>
             {% if item.subMenu %}
-              <button>{{item.linkText}}</button>
+              <button type="button" class="menu-item menu-has-children" data-menu-toggler="#item{{item.id}}" aria-expanded="false" aria-controls="item{{item.id}}">{{item.linkText}}</button>
+              <ul id="item{{item.id}}" class="submenu">
               {% for subItem in item.subMenu %}
-                <ul>
-                  <li>
-                    <a href="{{subItem.linkUrl}}">
-                      {% if subItem.linkImageUrl %}
-                        <img width="40px" src="./images/{{subItem.linkImageUrl}}" />
-                      {% endif %}
-                      {{subItem.linkText}}
-                    </a>
-                  </li>
-                </ul>
+                <li>
+                  <a href="{{subItem.linkUrl}}">
+                    {% if subItem.linkImageUrl %}
+                      <img width="40px" src="./images/{{subItem.linkImageUrl}}" />
+                    {% endif %}
+                    {{subItem.linkText}}
+                  </a>
+                </li>
               {% endfor %}
+              </ul>
             {% else %}
-            <a href="{{item.linkUrl}}">{{item.linkText}}</a>
+            <a href="{{item.linkUrl}}" class="menu-item">{{item.linkText}}</a>
             {% endif %}
-        </li>
+          </li>
         {% endfor %}
       </ul>
     </div>

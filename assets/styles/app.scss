@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 $small-up: 'min-width: 450px';
-$medium-down: 'max-width: 799px';
-$medium-up: 'min-width: 800px';
+$medium-down: 'max-width: 999px';
+$medium-up: 'min-width: 1000px';
 $large-up: 'min-width: 1200px';
 
 @mixin media($range) {
@@ -66,7 +66,7 @@ main > .block:first-child {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: white;
+  background-color: black;
   transition: height .2s ease;
 
   @include media($medium-up) {
@@ -91,13 +91,13 @@ main > .block:first-child {
 
     img {
       display: block;
-      width: 140px;
-      height: 34px;
+      width: 176px;
+      height: 43px;
       transition: width .2s ease, height .2s ease;
 
       @include media($medium-up) {
-        width: 221px;
-        height: 51px;
+        width: 264px;
+        height: 65px;
       }
     }
   }
@@ -109,6 +109,7 @@ main > .block:first-child {
     margin-right: 10px;
     width: 20px;
     height: 20px;
+    color: white;
     background-color: transparent;
     border: none;
 
@@ -140,7 +141,6 @@ main > .block:first-child {
     margin: 0;
     padding-left: 0;
     list-style: none;
-    text-transform: uppercase;
 
     @include media($medium-down) {
       position: absolute;
@@ -152,7 +152,7 @@ main > .block:first-child {
 
     @include media($medium-up) {
       display: block;
-      margin-top: 22px;
+      margin-top: 29px;
     }
 
     li {
@@ -162,33 +162,106 @@ main > .block:first-child {
         display: inline-block;
 
         &:not(:first-child) {
-          margin-left: 15px;
-          padding-left: 15px;
-          border-left: 2px solid currentColor;
+          margin-left: 20px;
+        }
+      }
+
+      .submenu {
+        display: none;
+
+        &.shown {
+          display: block;
+
+          @include media($medium-down) {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+
+            a {
+              display: block;
+              padding: 8px 20px;
+            }
+          }
+
+          @include media($medium-up) {
+            position: absolute;
+            top: 95px;
+            right: 0;
+            left: 0;
+            padding: 20px;
+            text-align: center;
+            color: black;
+            background-color: white;
+
+            li + li {
+              margin-left: 80px;
+            }
+          }
+        }
+
+        a {
+          color: black;
         }
       }
     }
 
-    a {
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.03rem;
+    a,
+    button {
+      font-size: 16px;
+      font-style: italic;
       text-decoration: none;
-      color: #555;
 
-      @include media($medium-down) {
-        display: block;
-        padding: 15px 20px;
-        border-top: 2px solid currentColor;
+      &.menu-item {
+        width: 100%;
+        font-family: inherit;
+        font-weight: 600;
+        letter-spacing: 0.03rem;
+        text-transform: uppercase;
+        text-align: left;
+        background: transparent;
+        border: none;
+
+        @include media($medium-down) {
+          display: block;
+          padding: 15px 20px;
+          color: black;
+          border-top: 2px solid currentColor;
+        }
+
+        @include media($medium-up) {
+          color: white;
+        }
+
+        &.menu-has-children::after {
+          content: '';
+          display: inline-block;
+          width: 12px;
+          height: 8px;
+          margin-left: 6px;
+          background: transparent url('../img/icon-menu-item-arrow.svg') 0 0 no-repeat;
+
+          @include media($medium-down) {
+            background-image: url('../img/icon-menu-item-arrow-black.svg');
+          }
+        }
+
+        // &:hover,
+        // &:focus {
+        //   border-color: #666;
+        // }
       }
+    }
+  }
 
-      @include media($medium-up) {
-        border-bottom: 2px solid white;
-      }
+  .has-open-item .mainnav {
+    a,
+    button {
+      &.menu-item:not(.active) {
+        color: gray;
 
-      &:hover,
-      &:focus {
-        border-color: #666;
+        &.menu-has-children::after {
+          opacity: .5;
+        }
       }
     }
   }
@@ -231,7 +304,7 @@ a.block {
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 50vw;//56.25vw
+  height: calc(50vw - 10px);
 
   @include media($medium-down) {
     min-height: 50vw;//56.25vw
@@ -330,10 +403,27 @@ a.block {
     }
   }
 
+  @include media($medium-down) {
+    &-half {
+      border: 20px solid white;
+      border-bottom: none;
+    }
+  }
+
   @include media($medium-up) {
     &-half {
       width: 50%;
-      height: 50vw;//56.25vw
+      height: calc(50vw - 10px);//56.25vw
+      border: 20px solid white;
+      border-bottom: none;
+
+      &:nth-child(odd) {
+        border-right-width: 10px;
+      }
+
+      &:nth-child(even) {
+        border-left-width: 10px;
+      }
     }
 
     &-text {
@@ -583,13 +673,16 @@ p {
   padding: 8px 12px;
   font-size: calc(.5vw + 9px);
   font-weight: 400;
+  font-style: italic;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  border: 1px solid white;
+  background-color: rgba(0,0,0,0.7);
+  border: none;
+  border-radius: 25px;
 
   @include media($medium-up) {
-    padding: 15px 25px;
+    padding: 15px 23px;
     font-size: 13px;
   }
 }
