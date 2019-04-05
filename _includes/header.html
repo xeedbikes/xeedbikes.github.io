@@ -1,9 +1,9 @@
 <header class="head">
   <div class="wrapper">
     <a href="/" class="logo"><img src="./assets/img/xeed-logo.jpg" alt="Xeed logo"></a>
-    <div id="menu">
+    <div id="menu" role="navigation">
       <button id="btn_menu" class="btn-menu" aria-label="Meny"></button>
-      <ul class="mainnav" role="navigation">
+      <ul class="mainnav">
         {% for item in page.headerlinks %}
           <li>
             {% if item.subMenu %}
