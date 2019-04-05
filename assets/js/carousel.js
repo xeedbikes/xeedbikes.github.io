@@ -31,7 +31,7 @@ var carousel = {
       var dotsList = document.querySelector('#' + carousel.carouselID + ' #dots');
 
       for (i = 0; i < itemsCount; i++) {
-        dotsList.innerHTML += '<li><input type="radio" name="carousel" class="carousel-dot carousel-nav" data-value="' + i + '" id="i' + i + '"' + (i === 0 ? ' checked' : '') + '><label for="i' + i + '"></label></li>'
+        dotsList.innerHTML += '<li><input type="radio" name="carousel" class="carousel-dot carousel-nav" data-value="' + i + '" id="i' + i + '"' + (i === 0 ? ' checked' : '') + '><label for="i' + i + '"><span>' + (i + 1) + '</span></label></li>'
       }
 
       document.addEventListener('click', function (e) {
