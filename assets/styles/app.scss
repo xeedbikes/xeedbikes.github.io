@@ -48,7 +48,7 @@ html {
 body {
   margin: 0;
   color: white;
-  background-color: #333;
+  background-color: #0f0f0f;
 }
 
 a {
@@ -714,8 +714,7 @@ p {
 
 footer {
   padding: 20px;
-  color: black;
-  background-color: white;
+  border-top: 20px solid white;
 
   @include media($medium-up) {
     padding-top: 40px;
@@ -744,7 +743,12 @@ footer {
     }
 
     li {
-      color: #666;
+      font-style: italic;
+      color: white;
+
+      @include media($medium-down) {
+        margin-bottom: 20px;
+      }
 
       @include media($medium-up) {
         display: inline-block;
@@ -752,21 +756,46 @@ footer {
         &:not(:first-child) {
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 2px solid currentColor;
+          border-left: 2px solid #777;
         }
       }
     }
 
     a {
       font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.03rem;
+      font-weight: 400;
+      letter-spacing: 0.05rem;
       text-decoration: none;
-      color: #555;
+      color: white;
 
       &:hover,
       &:focus {
-        border-color: #666;
+        border-color: white;
+      }
+    }
+
+    &.social-list {
+      li {
+        display: inline-block;
+        border-left: none;
+
+        @include media($medium-up) {
+          margin-top: -12px;
+          padding-left: 0;
+        }
+
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+
+      a {
+        display: block;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
       }
     }
   }
