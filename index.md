@@ -21,79 +21,74 @@ carousel:
     linkUrl: http://xeedbikes.no/
     textPosition: left
 
-# FORSIDE VIDEO BLOKK 100% BREDDE 
-# fullwidthvideo:
-# -   name: HUSK Å BESKYTTE HODET!
-#     intro: Velg riktig sykkelhjelm
-#     imageFileName: 1600x800_xeed_closeup_terreng.jpg
-#     linkText: video
-#     youtubeId: zB4f-uK1CuE
-#     textPosition: right
-
-# FORSIDE BLOKKER 100% BREDDE 
-# fullwidth:
-# -   name: GRV
-#     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-#     imageFileName: logotype.jpg
-#     linkText: Se alle cykler
-#     linkUrl: http://xeedbikes.no/
-#     textPosition: left
-
-# -   name: ATV
-#     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-#     imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
-#     linkText: Se alle cykler
-#     linkUrl: http://xeedbikes.no/
-#     textPosition: left
-
-# FORSIDE BLOKKER 50% BREDDE 
+# FORSIDE BLOKK 50% BREDDE 
 halfwidth:
 -   name: CRB
+    logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
 
 -   name: XCR
+    logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
 
+# FORSIDE VIDEO BLOKK 100% BREDDE 
+fullwidthvideo:
+-   name: HUSK Å BESKYTTE HODET!
+    intro: Velg riktig sykkelhjelm
+    imageFileName: 1600x800_xeed_closeup_terreng.jpg
+    linkText: video
+    youtubeId: zB4f-uK1CuE
+    textPosition: right
+
+# FORSIDE BLOKK 50% BREDDE 
 halfwidth2:
 -   name: XC
+    logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
 
 -   name: ECO
+    logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
 
+# FORSIDE BLOKK 50% BREDDE 
 halfwidth3:
 -   name: JR
+    logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
 
 -   name: KID
+    logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
 
+# FORSIDE BLOKK 50% BREDDE 
 halfwidth4:
 -   name: CLASSIC
+    logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
 
 -   name: CITY-E
+    logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
@@ -171,4 +166,16 @@ footerlinks:
 
 -   linkText: Kontakt oss
     linkUrl: http://xeedbikes.no/
+
+# FOOTER SOSIALE LENKER
+footerSocialLinks:
+-   linkText: Følg oss på Instagram
+    linkUrl: https://www.instagram.com/xxx
+    iconFileName: icon-instagram.svg
+    altText: Instagram
+
+-   linkText: Følg oss på Facebook
+    linkUrl: https://www.facebook.com/xxx
+    iconFileName: icon-facebook.svg
+    altText: Facebook
 ---

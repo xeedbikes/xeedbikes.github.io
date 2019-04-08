@@ -347,8 +347,10 @@ a.block {
 
   &-video {
     position: relative;
-    padding: 0 0 56.25%; /* 16:9 */
+    padding: 0 0 calc(56.25% - 22px); /* 16:9 */
     height: 0;
+    border: 20px solid white;
+    border-bottom: none;
 
     &:after {
       content: '';

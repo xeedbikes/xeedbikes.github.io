@@ -25,21 +25,6 @@
   </div>
   {% endif %}
 
-  <!-- FULL BREDDE VIDEO -->
-  {% for item in page.fullwidthvideo %}
-  <div class="block block-video block-bgimage block-video-youtube block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
-    <iframe title="Youtube video: {{item.name}}" frameborder="0" src="" allowTransparency="true" allowfullscreen allow="autoplay"></iframe>
-    <div class="block-content">
-      <p class="intro">{{item.intro}}</p>
-      <h2 class="title">{{item.name}}</h2>
-      <button type="button" class="btn-video-play" onclick="videoPlay(this, '{{item.youtubeId}}')" aria-hidden="Avspill video">
-        <span class="btn-video-play-arrow"></span>
-      </button>
-    </div>
-    <!-- <iframe width="560" height="315" src="'./images/{{item.videoYuotubeUrl}}'https://www.youtube.com/embed/zB4f-uK1CuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowTransparency="true" allow="autoplay" allowfullscreen></iframe> -->
-  </div>
-  {% endfor %}
-
   <!-- HALV BREDDE -->
   {% if page.halfwidth[0] != null %}
   <div class="block">
@@ -47,7 +32,11 @@
     {% for item in page.halfwidth %}
     <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
       <div class="block-content">
+        {% if item.logoFileName %}
+        <img src="./images/{{item.logoFileName}}" alt="{{item.name}}">
+        {% else %}
         <h2 class="brand-type">{{item.name}}</h2>
+        {% endif %}
         <p class="intro">{{item.intro}}</p>
         <p><span class="btn">{{item.linkText}}</span></p>
       </div>
@@ -57,13 +46,33 @@
   </div>
   {% endif %}
 
+  <!-- FULL BREDDE VIDEO -->
+  {% for item in page.fullwidthvideo %}
+  <div class="block block-video block-bgimage block-video-youtube block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
+    <!-- <div class="block-video-inner"> -->
+      <iframe title="Youtube video: {{item.name}}" frameborder="0" src="" allowTransparency="true" allowfullscreen allow="autoplay"></iframe>
+      <div class="block-content">
+        <p class="intro">{{item.intro}}</p>
+        <h2 class="title">{{item.name}}</h2>
+        <button type="button" class="btn-video-play" onclick="videoPlay(this, '{{item.youtubeId}}')" aria-hidden="Avspill video">
+          <span class="btn-video-play-arrow"></span>
+        </button>
+      </div>
+    <!-- </div> -->
+  </div>
+  {% endfor %}
+
   {% if page.halfwidth2[0] != null %}
   <div class="block">
 
     {% for item in page.halfwidth2 %}
     <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
       <div class="block-content">
+        {% if item.logoFileName %}
+        <img src="./images/{{item.logoFileName}}" alt="{{item.name}}">
+        {% else %}
         <h2 class="brand-type">{{item.name}}</h2>
+        {% endif %}
         <p class="intro">{{item.intro}}</p>
         <p><span class="btn">{{item.linkText}}</span></p>
       </div>
@@ -79,7 +88,11 @@
     {% for item in page.halfwidth3 %}
     <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
       <div class="block-content">
+        {% if item.logoFileName %}
+        <img src="./images/{{item.logoFileName}}" alt="{{item.name}}">
+        {% else %}
         <h2 class="brand-type">{{item.name}}</h2>
+        {% endif %}
         <p class="intro">{{item.intro}}</p>
         <p><span class="btn">{{item.linkText}}</span></p>
       </div>
@@ -95,7 +108,11 @@
     {% for item in page.halfwidth4 %}
     <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}" style="background-image: url('./images/{{item.imageFileName}}');">
       <div class="block-content">
+        {% if item.logoFileName %}
+        <img src="./images/{{item.logoFileName}}" alt="{{item.name}}">
+        {% else %}
         <h2 class="brand-type">{{item.name}}</h2>
+        {% endif %}
         <p class="intro">{{item.intro}}</p>
         <p><span class="btn">{{item.linkText}}</span></p>
       </div>
@@ -107,4 +124,5 @@
 
   {{content}}
 
+  <div class="menu-open-overlay"></div>
 </main>
