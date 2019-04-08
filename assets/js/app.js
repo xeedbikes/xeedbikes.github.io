@@ -15,6 +15,7 @@ var menu = document.getElementById('menu');
 var menuIsOpen = false;
 var menuTogglers = document.querySelectorAll('[data-menu-toggler]');
 var menuAnimDuration = 200;
+var menuOpenOverlay = document.querySelector('.menu-open-overlay');
 
 btnMenu.onclick = function() {
   if (!menuIsOpen) {
@@ -25,6 +26,9 @@ btnMenu.onclick = function() {
     menu.classList.remove('open');
     btnMenu.classList.remove('active');
     menuIsOpen = false;
+
+    var activeMenuItem = document.querySelector('[data-menu-toggler].active');
+    activeMenuItem && activeMenuItem.click();
   }
 };
 
@@ -54,8 +58,10 @@ var fnMenuToggle = function fnMenuToggle(i) {
     }
     if (document.querySelector('[data-menu-toggler].active')) {
       menu.classList.add('has-open-item');
+      menuOpenOverlay.classList.add('shown');
     } else {
       menu.classList.remove('has-open-item');
+      menuOpenOverlay.classList.remove('shown');
     }
   };
 };
@@ -63,6 +69,11 @@ var fnMenuToggle = function fnMenuToggle(i) {
 for (var i = 0; i < menuTogglers.length; i++) {
   fnMenuToggle(i);
 }
+
+menuOpenOverlay.onclick = function () {
+  var activeMenuItem = document.querySelector('[data-menu-toggler].active');
+  activeMenuItem.click();
+};
 
 // Video Youtube
 function videoPlay(videoElementButton, videoId) {

@@ -64,11 +64,15 @@ button {
   border: 1px solid black;
 }
 
-main > .block:first-child {
-  margin-top: 74px;
+main {
+  font-style: italic;
 
-  @include media($medium-up) {
-    margin-top: 95px;
+  > .block:first-child {
+    margin-top: 74px;
+
+    @include media($medium-up) {
+      margin-top: 95px;
+    }
   }
 }
 
@@ -186,14 +190,19 @@ main > .block:first-child {
         &.shown {
           display: block;
 
+          img {
+            vertical-align: middle;
+          }
+
           @include media($medium-down) {
             list-style: none;
+            margin-bottom: 10px;
             margin-left: 0;
             padding-left: 0;
 
             a {
               display: block;
-              padding: 8px 20px;
+              padding: 10px 20px;
             }
           }
 
@@ -209,10 +218,6 @@ main > .block:first-child {
 
             li + li {
               margin-left: 80px;
-            }
-
-            img {
-              vertical-align: middle;
             }
           }
         }
@@ -251,38 +256,68 @@ main > .block:first-child {
           color: white;
         }
 
-        &.menu-has-children::after {
-          content: '';
-          display: inline-block;
-          width: 12px;
-          height: 8px;
-          margin-left: 6px;
-          background: transparent url('../img/icon-menu-item-arrow.svg') 0 0 no-repeat;
+        &.menu-has-children {
+          &::after {
+            content: '';
+            position: relative;
+            display: inline-block;
+            width: 12px;
+            height: 8px;
+            margin-left: 6px;
+            background: transparent url('../img/icon-menu-item-arrow.svg') 0 0 no-repeat;
 
-          @include media($medium-down) {
-            background-image: url('../img/icon-menu-item-arrow-black.svg');
+            @include media($medium-down) {
+              position: absolute;
+              right: 20px;
+              margin-top: .4em;
+              background-image: url('../img/icon-menu-item-arrow-black.svg');
+            }
+          }
+
+          &.active::after {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+
+            @include media($medium-up) {
+              top: -2px;
+            }
           }
         }
-
-        // &:hover,
-        // &:focus {
-        //   border-color: #666;
-        // }
       }
     }
   }
 
-  .has-open-item .mainnav {
-    a,
-    button {
-      &.menu-item:not(.active) {
-        color: gray;
+  .has-open-item {
+    .mainnav {
+      a,
+      button {
+        &.menu-item:not(.active) {
+          color: gray;
 
-        &.menu-has-children::after {
-          opacity: .5;
+          &.menu-has-children::after {
+            opacity: .5;
+          }
         }
       }
     }
+  }
+}
+
+.menu-open-overlay {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+
+  &.shown {
+    display: block;
+    bottom: 0;
   }
 }
 
@@ -386,7 +421,7 @@ a.block {
     }
 
     .block-content {
-      max-width: 440px;
+      max-width: 540px;
       margin-top: 50%;
     }
 
@@ -497,7 +532,7 @@ a.block {
       max-width: 360px;
 
       .block-carousel & {
-        max-width: 440px;
+        max-width: 540px;
       }
     }
   }
@@ -554,9 +589,8 @@ a.block {
 
     .carousel-arrow {
       position: absolute;
-      z-index: 2;
       top: 50%;
-      z-index: 10;
+      z-index: 2;
       width: 40px;
       height: 50px;
       background-color: transparent;
