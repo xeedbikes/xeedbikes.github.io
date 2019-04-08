@@ -103,15 +103,15 @@ headerlinks:
         -   id: 1_1
             linkText: Carbon Terreng
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
         -   id: 1_2
             linkText: Race Terreng
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
         -   id: 1_3
             linkText: Sport & Trening
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
 
 -   id: 2
     linkText: Hybrid
@@ -120,11 +120,11 @@ headerlinks:
         -   id: 1_1
             linkText: Hybrid 1
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
         -   id: 1_2
             linkText: Hybrid 2
             linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
 
 -   id: 3
     linkText: Jr & Kids
@@ -137,11 +137,11 @@ headerlinks:
         -   id: 4_1
             linkText: Classic & City 1
             linkUrl: https://www.sport1.no/sykkel/sykler/bysykkel/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
         -   id: 4_2
             linkText: Classic & City 2
             linkUrl: https://www.sport1.no/sykkel/sykler/bysykkel/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
 
 -   id: 5
     linkText: El-sykler
@@ -150,11 +150,11 @@ headerlinks:
         -   id: 5_1
             linkText: El-sykkel 1
             linkUrl: https://www.sport1.no/sykkel/sykler/el--sykler/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
         -   id: 5_2
             linkText: El-sykkel 2
             linkUrl: https://www.sport1.no/sykkel/sykler/el--sykler/?b=Xeed
-            linkImageUrl: logotype.jpg
+            linkImageUrl: logotype.png
 
 # FOOTER LENKER
 footerlinks:
