@@ -4,10 +4,10 @@ layout: default
 # FORSIDE KARUSELL
 carousel:
 -   name: Designet for norske forhold siden 1995
-    imageFileName: 1600x800_xeed_closeup_terreng2.jpg
+    imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
-    textPosition: right
+    textPosition: left
 
 -   name: Designet for norske forhold siden 1995
     imageFileName: 1600x800_elsykkel_gekko_ss18.jpg
