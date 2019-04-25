@@ -4,7 +4,7 @@ layout: default
 # FORSIDE KARUSELL
 carousel:
 -   name: Designet for norske forhold siden 1995
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
+    imageFileName: 1600x800_xeed_closeup_terreng2.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
     textPosition: right
