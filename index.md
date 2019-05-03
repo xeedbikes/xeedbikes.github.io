@@ -30,12 +30,12 @@ halfwidth:
     linkText: Se alle terrengsykler fra Xeed
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
 
--   name: XCR
+-   name: KID & JR
     logoFileName: logotype.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+    intro: Trygge og gode sykler tilpasset barnets utvikling og ferdigheter
+    imageFileName: 50-xeed-kids.png
+    linkText: Se alle barn- og juniorsykler fra Xeed
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=be2d9e7c-0475-49d0-ae74-81483889f816
 
 # FORSIDE VIDEO BLOKK 100% BREDDE 
 fullwidthvideo:
@@ -57,7 +57,7 @@ halfwidth2:
 
 -   name: ECO
     logoFileName: logotype.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
+    intro: Trygge og gode sykler tilpasset barnets utvikling og ferdigheter
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
