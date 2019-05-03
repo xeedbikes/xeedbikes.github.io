@@ -69,22 +69,6 @@ halfwidth3:
     linkText: Se alle cykler
     linkUrl: http://xeedbikes.no/
 
-# FORSIDE BLOKK 50% BREDDE 
-halfwidth4:
--   name: CLASSIC
-    logoFileName: logotype.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
-
--   name: CITY-E
-    logoFileName: logotype.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle elsykler fra Xeed
-    linkUrl: https://www.sport1.no/varemerker/xeed/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
-
 # HEADER LENKER
 headerlinks:
 -   id: 1
