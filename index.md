@@ -9,26 +9,26 @@ carousel:
     linkUrl: https://www.sport1.no/varemerker/xeed/
     textPosition: left
 
--   name: Alltid medvind med elsykkel
+-   name: Sjekk ut Xeed sine lettvektssykler til junior!
     imageFileName: toppbilde-elsykkel-kent.png
-    linkText: Se alle elsykler fra Xeed
-    linkUrl: https://www.sport1.no/varemerker/xeed/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
+    linkText: Les mer her
+    linkUrl: https://www.sport1.no/inspirasjon/sykkel/xeed-lettvektssykler-til-barn-og-jr/
     textPosition: left
 
--   name: Designet for norske forhold siden 1995
-    imageFileName: 1600x800_norrona_sykling_terreng_fjoro_detalj_sommer.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+-   name: Vi tipser! Velg riktig terrengsykkel
+    imageFileName: toppbilde-terreng-monicaogmann.png
+    linkText: Les mer her
+    linkUrl: https://www.sport1.no/inspirasjon/sykkel/terrengsykler/
     textPosition: left
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth:
 -   name: CRB
     logoFileName: logotype.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
+    intro: Xeed leverer et bredt utvalg av terrengsykler - alt fra fulldempere for stisykling til lynraske maratonracere for grus og raske stier
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+    linkText: Se alle terrengsykler fra Xeed
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
 
 -   name: XCR
     logoFileName: logotype.png
@@ -91,8 +91,8 @@ halfwidth4:
     logoFileName: logotype.png
     intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+    linkText: Se alle elsykler fra Xeed
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
 
 # HEADER LENKER
 headerlinks:
