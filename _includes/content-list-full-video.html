@@ -1,0 +1,18 @@
+<!-- FULL BREDDE VIDEO -->
+{% for item in include.content %}
+<div class="block block-video block-bgimage block-video-youtube block-padding block-text-{{item.textPosition}}"
+  style="background-image: url('./images/{{item.imageFileName}}');">
+  <!-- <div class="block-video-inner"> -->
+  <iframe title="Youtube video: {{item.name}}" frameborder="0" src="" allowTransparency="true" allowfullscreen
+    allow="autoplay"></iframe>
+  <div class="block-content">
+    <p class="intro">{{item.intro}}</p>
+    <h2 class="title">{{item.name}}</h2>
+    <button type="button" class="btn-video-play" onclick="videoPlay(this, '{{item.youtubeId}}')"
+      aria-label="Avspill video">
+      <span class="btn-video-play-arrow"></span>
+    </button>
+  </div>
+  <!-- </div> -->
+</div>
+{% endfor %}

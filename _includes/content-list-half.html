@@ -1,0 +1,27 @@
+<!-- HALV BREDDE -->
+{% for item in include.content %}
+
+{% assign remainder = forloop.index0 | modulo: 2 %}
+
+{% if forloop.first or remainder == 0 %}
+<div class="block">
+  {% endif %}
+
+  <a href="{{item.linkUrl}}" class="block block-half block-bgimage block-padding block-text-{{item.textPosition}}"
+    style="background-image: url('./images/{{item.imageFileName}}');">
+    <div class="block-content">
+      {% if item.logoFileName %}
+      <img src="./images/{{item.logoFileName}}" alt="{{item.name}}">
+      {% else %}
+      <h2 class="brand-type">{{item.name}}</h2>
+      {% endif %}
+      <p class="intro">{{item.intro}}</p>
+      <p><span class="btn">{{item.linkText}}</span></p>
+    </div>
+  </a>
+
+  {% if forloop.last or remainder > 0 %}
+</div>
+{% endif %}
+
+{% endfor %}

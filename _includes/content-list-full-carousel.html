@@ -1,0 +1,28 @@
+<!-- KARUSELL -->
+{% if include.content[0] != null %}
+<div class="block block-carousel">
+  <div id="carousel" class="carousel-wrapper">
+    <div class="carousel-inner">
+      <ul class="carousel-list carousel-slide-0">
+
+        {% for item in include.content %}
+        <li class="carousel-list-item">
+          <a href="{{item.linkUrl}}" class="block block-bgimage block-padding block-text-{{item.textPosition}}"
+            style="background-image: url('./images/{{item.imageFileName}}');">
+            <div class="block-content">
+              <h2 class="title">{{item.name}}</h2>
+              <p><span class="btn">{{item.linkText}}</span></p>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+    <button type="button" class="carousel-arrow carousel-arrow-prev carousel-nav" data-carousel="carousel"
+      data-move="prev" aria-hidden="true" hidden></button>
+    <button type="button" class="carousel-arrow carousel-arrow-next carousel-nav" data-carousel="carousel"
+      data-move="next" aria-hidden="true" hidden></button>
+  </div>
+</div>
+{% endif %}
