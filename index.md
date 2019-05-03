@@ -39,7 +39,7 @@ halfwidth:
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth2:
--   name: CITY-E
+-   name: XC
     logoFileName: logotype.png
     intro: Fungerer på de fleste underlag og en mellomting mellom landevei- og terrengsykler
     imageFileName: 50-xeed-hybrid-siljemork.png
@@ -53,21 +53,14 @@ halfwidth2:
     linkText: Se alle el-sykler
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
 
-# FORSIDE BLOKK 50% BREDDE 
-halfwidth3:
--   name: JR
+# FORSIDE BLOKK 100% BREDDE 
+fullwidth3:
+-   name: CITY-E
     logoFileName: logotype.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
+    intro: Sjekk ut våre classic-sykler med komfortabel sittestilling og lavt innsteg
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
-
--   name: KID
-    logoFileName: logotype.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+    linkText: Se alle bysykler
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=7b221a9f-029c-4293-a7d4-de5e54260026
 
 # HEADER LENKER
 headerlinks:
