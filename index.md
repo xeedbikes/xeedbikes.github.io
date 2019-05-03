@@ -9,10 +9,10 @@ carousel:
     linkUrl: https://www.sport1.no/varemerker/xeed/
     textPosition: left
 
--   name: Designet for norske forhold siden 1995
-    imageFileName: 1600x800_elsykkel_gekko_ss18.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+-   name: Alltid medvind med elsykkel
+    imageFileName: toppbilde-elsykkel-kent.png
+    linkText: Se alle elsykler fra Xeed
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
     textPosition: left
 
 -   name: Designet for norske forhold siden 1995
