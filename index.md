@@ -58,7 +58,7 @@ fullwidth3:
 -   name: CITY-E
     logoFileName: logotype.png
     intro: Sjekk ut våre classic-sykler med komfortabel sittestilling og lavt innsteg
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
+    imageFileName: toppbilde-classic-.png
     linkText: Se alle bysykler
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=7b221a9f-029c-4293-a7d4-de5e54260026
 
