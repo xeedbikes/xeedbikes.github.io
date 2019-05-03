@@ -39,19 +39,19 @@ halfwidth:
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth2:
--   name: XC
+-   name: CITY-E
     logoFileName: logotype.png
-    intro: Surprisingly agile mountain bike for enduro racing and all-mountain competitions
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+    intro: Fungerer på de fleste underlag og en mellomting mellom landevei- og terrengsykler
+    imageFileName: 50-xeed-hybrid-siljemork.png
+    linkText: Se alle hybridsykler
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=9c344a38-3e0a-4b2b-88de-a5b4b04447ed
 
 -   name: ECO
     logoFileName: logotype.png
-    intro: Trygge og gode sykler tilpasset barnets utvikling og ferdigheter
+    intro: Elektrisk hjelpemotor og batteri som egner seg for norske forhold
     imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+    linkText: Se alle el-sykler
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth3:
