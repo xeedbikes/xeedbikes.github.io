@@ -49,7 +49,7 @@ halfwidth2:
 -   name: ECO
     logoFileName: logotype.png
     intro: Elektrisk hjelpemotor og batteri som egner seg for norske forhold
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
+    imageFileName: 50-xeed-elsykler-kenthege.png
     linkText: Se alle el-sykler
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
 
