@@ -3,10 +3,10 @@ layout: default
 
 # FORSIDE KARUSELL
 carousel:
--   name: Designet for norske forhold siden 1995
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: Se alle cykler
-    linkUrl: http://xeedbikes.no/
+-   name: Gode og funksjonelle sykler designet for norske forhold
+    imageFileName: toppbilde-barn-junior-skolegaard.png
+    linkText: Se alle sykler
+    linkUrl: https://www.sport1.no/varemerker/xeed/
     textPosition: left
 
 -   name: Designet for norske forhold siden 1995
