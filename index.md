@@ -27,24 +27,15 @@ halfwidth:
     logoFileName: logotype.png
     intro: Xeed leverer et bredt utvalg av terrengsykler - alt fra fulldempere for stisykling til lynraske maratonracere for grus og raske stier
     imageFileName: 50-xeed-terreng-hardtail.png
-    linkText: Se alle terrengsykler fra Xeed
+    linkText: Se alle terrengsykler
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
 
 -   name: KID & JR
     logoFileName: logotype.png
     intro: Trygge og gode sykler tilpasset barnets utvikling og ferdigheter
     imageFileName: 50-xeed-kids.png
-    linkText: Se alle barn- og juniorsykler fra Xeed
+    linkText: Se alle barn- og juniorsykler
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=be2d9e7c-0475-49d0-ae74-81483889f816
-
-# FORSIDE VIDEO BLOKK 100% BREDDE 
-fullwidthvideo:
--   name: HUSK Å BESKYTTE HODET!
-    intro: Velg riktig sykkelhjelm
-    imageFileName: 1600x800_xeed_closeup_terreng.jpg
-    linkText: video
-    youtubeId: zB4f-uK1CuE
-    textPosition: right
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth2:
@@ -98,64 +89,24 @@ halfwidth4:
 headerlinks:
 -   id: 1
     linkText: Terreng
-    linkUrl: 
-    subMenu:
-        -   id: 1_1
-            linkText: Carbon Terreng
-            linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.png
-        -   id: 1_2
-            linkText: Race Terreng
-            linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.png
-        -   id: 1_3
-            linkText: Sport & Trening
-            linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.png
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
 
 -   id: 2
     linkText: Hybrid
-    linkUrl:
-    subMenu:
-        -   id: 1_1
-            linkText: Hybrid 1
-            linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.png
-        -   id: 1_2
-            linkText: Hybrid 2
-            linkUrl: https://www.sport1.no/sykkel/sykler/terrengsykkel/?b=Xeed
-            linkImageUrl: logotype.png
-
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=9c344a38-3e0a-4b2b-88de-a5b4b04447ed
+  
 -   id: 3
     linkText: Jr & Kids
-    linkUrl: https://www.sport1.no/sykkel/sykler/hybridsykkel/?b=Xeed
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=be2d9e7c-0475-49d0-ae74-81483889f816
 
 -   id: 4
     linkText: Classic & City
-    linkUrl:
-    subMenu:
-        -   id: 4_1
-            linkText: Classic & City 1
-            linkUrl: https://www.sport1.no/sykkel/sykler/bysykkel/?b=Xeed
-            linkImageUrl: logotype.png
-        -   id: 4_2
-            linkText: Classic & City 2
-            linkUrl: https://www.sport1.no/sykkel/sykler/bysykkel/?b=Xeed
-            linkImageUrl: logotype.png
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=7b221a9f-029c-4293-a7d4-de5e54260026
 
 -   id: 5
     linkText: El-sykler
-    linkUrl:
-    subMenu:
-        -   id: 5_1
-            linkText: El-sykkel 1
-            linkUrl: https://www.sport1.no/sykkel/sykler/el--sykler/?b=Xeed
-            linkImageUrl: logotype.png
-        -   id: 5_2
-            linkText: El-sykkel 2
-            linkUrl: https://www.sport1.no/sykkel/sykler/el--sykler/?b=Xeed
-            linkImageUrl: logotype.png
-
+    linkUrl: https://www.sport1.no/varemerker/xeed/?a=599fc3f6-83c7-49d3-a6ce-afe66720b86f
+    
 # FOOTER LENKER
 footerlinks:
 -   linkText: Kontakt oss
