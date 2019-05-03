@@ -47,7 +47,7 @@ halfwidth2:
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=9c344a38-3e0a-4b2b-88de-a5b4b04447ed
 
 -   name: ECO
-    logoFileName: logotype.png
+    logoFileName: XD_CategoryLogo_ECO_DarkGray_RGB_72dpi.png
     intro: Elektrisk hjelpemotor og batteri som egner seg for norske forhold
     imageFileName: 50-xeed-elsykler-kenthege.png
     linkText: Se alle el-sykler
