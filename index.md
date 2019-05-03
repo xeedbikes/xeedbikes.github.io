@@ -4,13 +4,13 @@ layout: default
 # FORSIDE KARUSELL
 carousel:
 -   name: Gode og funksjonelle sykler designet for norske forhold
-    imageFileName: toppbilde-barn-junior-skolegaard.png
+    imageFileName: toppbilde-elsykkel-kent.png
     linkText: Se alle sykler
     linkUrl: https://www.sport1.no/varemerker/xeed/
     textPosition: left
 
 -   name: Sjekk ut Xeed sine lettvektssykler til junior!
-    imageFileName: toppbilde-elsykkel-kent.png
+    imageFileName: toppbilde-barn-junior-skolegaard.png
     linkText: Les mer her
     linkUrl: https://www.sport1.no/inspirasjon/sykkel/xeed-lettvektssykler-til-barn-og-jr/
     textPosition: left
