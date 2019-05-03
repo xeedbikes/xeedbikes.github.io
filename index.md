@@ -56,7 +56,7 @@ halfwidth2:
 # FORSIDE BLOKK 100% BREDDE 
 fullwidth3:
 -   name: CITY-E
-    logoFileName: logotype.png
+    logoFileName: XD_CategoryLogo_CITY-E_DarkGray_RGB_72dpi.png
     intro: Sjekk ut våre classic-sykler med komfortabel sittestilling og lavt innsteg
     imageFileName: toppbilde-classic-.png
     linkText: Se alle bysykler
