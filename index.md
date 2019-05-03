@@ -24,7 +24,7 @@ carousel:
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth:
 -   name: CRB
-    logoFileName: logotype.png
+    logoFileName: XD_CategoryLogo_XCR_DarkGray_RGB_72dpi.png
     intro: Xeed leverer et bredt utvalg av terrengsykler - alt fra fulldempere for stisykling til lynraske maratonracere for grus og raske stier
     imageFileName: 50-xeed-terreng-hardtail.png
     linkText: Se alle terrengsykler
