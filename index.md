@@ -31,7 +31,7 @@ halfwidth:
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
 
 -   name: KID & JR
-    logoFileName: logotype.png
+    logoFileName: logo-xrckid-xcrjr-hvit.png
     intro: Trygge og gode sykler tilpasset barnets utvikling og ferdigheter
     imageFileName: 50-xeed-kids.png
     linkText: Se alle barn- og juniorsykler
