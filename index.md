@@ -39,8 +39,8 @@ halfwidth:
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth2:
--   name: XC
-    logoFileName: logotype.png
+-   name: CITY-E
+    logoFileName: XD_CategoryLogo_CITY-E_White_RGB_72dpi.png
     intro: Fungerer på de fleste underlag og en mellomting mellom landevei- og terrengsykler
     imageFileName: 50-xeed-hybrid-siljemork.png
     linkText: Se alle hybridsykler
