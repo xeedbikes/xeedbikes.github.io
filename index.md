@@ -88,6 +88,9 @@ headerlinks:
 footerlinks:
 -   linkText: Kontakt oss
     linkUrl: https://form.socialboards.com/sport1/sykkelsupport
+    
+-   linkText: Arkiv
+    linkUrl: http://arkiv.xeedbikes.no/Arkiv/
 
 # FOOTER SOSIALE LENKER
 footerSocialLinks:
