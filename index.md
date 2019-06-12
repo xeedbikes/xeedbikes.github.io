@@ -31,7 +31,7 @@ halfwidth:
     linkUrl: https://www.sport1.no/sykkel/sykler/?g=Barn
     
 -   name: JR
-    logoFileName: XD_CategoryLogo_XCR_White_RGB_72dpi.png
+    logoFileName: xc-jr-logo.png
     intro: Stort utvalg juniorsykler til terreng og hverdags
     imageFileName: 50-xeed-terreng-hardtail.png
     linkText: Se alle juniorsykler
