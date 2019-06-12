@@ -23,19 +23,28 @@ carousel:
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth:
+-   name: KID
+    logoFileName: logo-xrckid-xcrjr-hvit.png
+    intro: Trygge og gode sykler tilpasset barnets utvikling og ferdigheter
+    imageFileName: 50-xeed-kids.png
+    linkText: Se alle barnesykler
+    linkUrl: https://www.sport1.no/sykkel/sykler/?g=Barn
+    
+-   name: JR
+    logoFileName: XD_CategoryLogo_XCR_White_RGB_72dpi.png
+    intro: Stort utvalg juniorsykler til terreng og hverdags
+    imageFileName: 50-xeed-terreng-hardtail.png
+    linkText: Se alle juniorsykler
+    linkUrl: https://www.sport1.no/sykkel/sykler/?g=Junior
+    
+# FORSIDE BLOKK 100% BREDDE 
+fullwidth3:
 -   name: XCR
     logoFileName: XD_CategoryLogo_XCR_White_RGB_72dpi.png
     intro: Xeed leverer et bredt utvalg av terrengsykler - alt fra fulldempere for stisykling til lynraske maratonracere for grus og raske stier
     imageFileName: 50-xeed-terreng-hardtail.png
     linkText: Se alle terrengsykler
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
-
--   name: KID & JR
-    logoFileName: logo-xrckid-xcrjr-hvit.png
-    intro: Trygge og gode sykler tilpasset barnets utvikling og ferdigheter
-    imageFileName: 50-xeed-kids.png
-    linkText: Se alle barn- og juniorsykler
-    linkUrl: https://www.sport1.no/varemerker/xeed/?a=be2d9e7c-0475-49d0-ae74-81483889f816
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth2:
