@@ -33,7 +33,7 @@ halfwidth:
 -   name: JR
     logoFileName: xc-jr-logo.png
     intro: Stort utvalg juniorsykler til terreng og hverdags
-    imageFileName: 50-xeed-terreng-hardtail.png
+    imageFileName: 50-xeed-junior-skog.png
     linkText: Se alle juniorsykler
     linkUrl: https://www.sport1.no/sykkel/sykler/?g=Junior
     
