@@ -7,7 +7,7 @@ carousel:
     imageFileName: toppbilde-elsykkel-kent.png
     linkText: Se alle sykler
     linkUrl: https://www.sport1.no/varemerker/xeed/
-    textPosition: left
+    textPosition: right
 
 -   name: Sjekk ut Xeed sine lettvektssykler til junior!
     imageFileName: toppbilde-barn-junior-skolegaard.png
