@@ -24,7 +24,7 @@ carousel:
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth:
 -   name: KID
-    logoFileName: logo-xrckid-xcrjr-hvit.png
+    logoFileName: xc-kid-logo.png
     intro: Trygge og gode sykler tilpasset barnets utvikling og ferdigheter
     imageFileName: 50-xeed-kids.png
     linkText: Se alle barnesykler
