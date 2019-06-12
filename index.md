@@ -13,13 +13,13 @@ carousel:
     imageFileName: toppbilde-barn-junior-skolegaard.png
     linkText: Les mer her
     linkUrl: https://www.sport1.no/inspirasjon/sykkel/xeed-lettvektssykler-til-barn-og-jr/
-    textPosition: left
+    textPosition: right
 
 -   name: Vi tipser! Velg riktig terrengsykkel
     imageFileName: toppbilde-terreng-monicaogmann.png
     linkText: Les mer her
     linkUrl: https://www.sport1.no/inspirasjon/sykkel/terrengsykler/
-    textPosition: left
+    textPosition: right
 
 # FORSIDE BLOKK 50% BREDDE 
 halfwidth:
