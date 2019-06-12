@@ -38,7 +38,7 @@ halfwidth:
     linkUrl: https://www.sport1.no/sykkel/sykler/?g=Junior
     
 # FORSIDE BLOKK 100% BREDDE 
-fullwidth3:
+fullwidth:
 -   name: XCR
     logoFileName: XD_CategoryLogo_XCR_White_RGB_72dpi.png
     intro: Xeed leverer et bredt utvalg av terrengsykler - alt fra fulldempere for stisykling til lynraske maratonracere for grus og raske stier
