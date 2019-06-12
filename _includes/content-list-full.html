@@ -1,15 +1,21 @@
 <!-- FULL BREDDE -->
 {% for item in include.content %}
-<a href="{{item.linkUrl}}" class="block block-bgimage block-padding block-text-{{item.textPosition}}"
-  style="background-image: url('./images/{{item.imageFileName}}');">
+<a
+  href="{{ item.linkUrl }}"
+  class="block block-bgimage block-padding block-text-{{ item.textPosition }}"
+  style="background-image: url('./images/{{ item.imageFileName }}');"
+  target="_blank"
+>
   <div class="block-content">
     {% if item.logoFileName %}
-    <img src="./images/{{item.logoFileName}}" alt="{{item.name}}">
+    <img src="./images/{{ item.logoFileName }}" alt="{{ item.name }}" />
     {% else %}
-    <h2 class="brand-type">{{item.name}}</h2>
+    <h2 class="brand-type">{{ item.name }}</h2>
     {% endif %}
-    <p class="intro">{{item.intro}}</p>
-    <p><span class="btn">{{item.linkText}}</span></p>
+    <p class="intro">{{ item.intro }}</p>
+    <p>
+      <span class="btn">{{ item.linkText }}</span>
+    </p>
   </div>
 </a>
 {% endfor %}

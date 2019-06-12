@@ -2,14 +2,20 @@
   <nav>
     <ul class="footer-list">
       {% for item in page.footerlinks %}
-      <li><a href="{{item.linkUrl}}">{{item.linkText}}</a></li>
+      <li>
+        <a href="{{ item.linkUrl }}" target="_blank">{{ item.linkText }}</a>
+      </li>
       {% endfor %}
     </ul>
     <ul class="social-list">
       {% for item in page.footerSocialLinks %}
       <li>
-        <a href="{{item.linkUrl}}" title="{{item.linkText}}">
-          <img src="images/{{item.iconFileName}}" alt="{{item.altText}}">
+        <a
+          href="{{ item.linkUrl }}"
+          title="{{ item.linkText }}"
+          target="_blank"
+        >
+          <img src="images/{{ item.iconFileName }}" alt="{{ item.altText }}" />
         </a>
       </li>
       {% endfor %}

@@ -1,29 +1,41 @@
 <header class="head">
   <div class="wrapper">
-    <a href="/" class="logo"><img src="./assets/img/xeed-logo-ny-png.png" alt="Xeed logo"></a>
+    <a href="/" class="logo"
+      ><img src="./assets/img/xeed-logo-ny-png.png" alt="Xeed logo"
+    /></a>
     <div id="menu" role="navigation">
       <button id="btn_menu" class="btn-menu" aria-label="Meny"></button>
       <ul class="mainnav">
         {% for item in page.headerlinks %}
-          <li>
-            {% if item.subMenu %}
-              <button type="button" class="menu-item menu-has-children" data-menu-toggler="#item{{item.id}}" aria-expanded="false" aria-controls="item{{item.id}}">{{item.linkText}}</button>
-              <ul id="item{{item.id}}" class="submenu">
-              {% for subItem in item.subMenu %}
-                <li>
-                  <a href="{{subItem.linkUrl}}">
-                    {% if subItem.linkImageUrl %}
-                      <img src="./images/{{subItem.linkImageUrl}}" alt="" />
-                    {% endif %}
-                    {{subItem.linkText}}
-                  </a>
-                </li>
-              {% endfor %}
-              </ul>
-            {% else %}
-            <a href="{{item.linkUrl}}" class="menu-item">{{item.linkText}}</a>
-            {% endif %}
-          </li>
+        <li>
+          {% if item.subMenu %}
+          <button
+            type="button"
+            class="menu-item menu-has-children"
+            data-menu-toggler="#item{{ item.id }}"
+            aria-expanded="false"
+            aria-controls="item{{ item.id }}"
+          >
+            {{ item.linkText }}
+          </button>
+          <ul id="item{{ item.id }}" class="submenu">
+            {% for subItem in item.subMenu %}
+            <li>
+              <a href="{{ subItem.linkUrl }}" target="_blank">
+                {% if subItem.linkImageUrl %}
+                <img src="./images/{{ subItem.linkImageUrl }}" alt="" />
+                {% endif %}
+                {{ subItem.linkText }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <a href="{{ item.linkUrl }}" class="menu-item" target="_blank">{{
+            item.linkText
+          }}</a>
+          {% endif %}
+        </li>
         {% endfor %}
       </ul>
     </div>
