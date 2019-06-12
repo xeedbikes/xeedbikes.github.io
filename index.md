@@ -42,7 +42,7 @@ fullwidth:
 -   name: XCR
     logoFileName: XD_CategoryLogo_XCR_White_RGB_72dpi.png
     intro: Xeed leverer et bredt utvalg av terrengsykler - alt fra fulldempere for stisykling til lynraske maratonracere for grus og raske stier
-    imageFileName: 50-xeed-terreng-hardtail.png
+    imageFileName: 1600x800_xeed_closeup_terreng.jpg
     linkText: Se alle terrengsykler
     linkUrl: https://www.sport1.no/varemerker/xeed/?a=c89ca348-1eb5-4a46-a253-731fe22b8465
 
