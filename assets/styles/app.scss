@@ -462,13 +462,20 @@ a.block {
   }
 
   @include media($medium-down) {
-    &-half {
+    &-half,
+    &-fullwidth {
       border: 20px solid white;
       border-bottom: none;
     }
   }
 
   @include media($medium-up) {
+    &-half,
+    &-fullwidth {
+      border: 20px solid white;
+      border-bottom: none;
+    }
+
     &-half {
       width: 50%;
       height: calc(50vw - 10px);//56.25vw
